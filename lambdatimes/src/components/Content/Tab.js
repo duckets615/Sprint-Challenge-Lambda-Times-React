@@ -7,7 +7,7 @@ const Tab = props => {
       if it is not it should just be 'tab'*/
   return (
     <div
-      className={''}
+      className={'tab'}
       onClick={() => {
         /* Replace this dummy click handler function with your selectTabHandler function from props
          you'll need to pass the `tab` in as an argument to this handler. */
@@ -19,6 +19,7 @@ const Tab = props => {
 };
 
 Tab.propTypes = {
+  selectedTab: PropTypes.string,
   tab: PropTypes.string,
 }// Make sure you include PropTypes on your props.
 
