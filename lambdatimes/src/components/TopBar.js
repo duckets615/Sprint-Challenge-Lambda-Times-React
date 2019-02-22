@@ -13,8 +13,8 @@ const Header = styled.div`
   height: 44px;
   background-color: #333;
   `
-
-const Container = styled.div`
+// style within compoment, easier to follow/alter, can eliminate need for css if used en masse
+const Container = styled.div` 
   width: 100%;
   display: flex;
   justify-content: none;
