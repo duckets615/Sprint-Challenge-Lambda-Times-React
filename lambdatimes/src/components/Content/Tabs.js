@@ -6,7 +6,7 @@ const Tabs = props => {
     <div className="tabs">
       <div className="topics">
         <span className="title">TRENDING TOPICS:</span>
-        {props.tabs.map(tab => <tAB />)}
+        {props.tabs.map(tab => <Tab tab={tab} key={tab}/>)}
       </div>
     </div>
   );
