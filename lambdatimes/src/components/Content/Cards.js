@@ -9,7 +9,7 @@ const Cards = props => {
     </div>
   )
 }
-// structure for how each card is to be rendered;
+
 Cards.PropTypes = {
   cards: PropTypes.arrayOf(PropTypes.shape({ //obj takes a specific shape
     author: PropTypes.string.isRequired,

@@ -8,7 +8,7 @@ const Card = props => {
     author,
     img
   } = props.card;
-
+// structure for how each card is to be rendered;
   return (
     <div className="card">
       <div className="headline">{headline}</div>

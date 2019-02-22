@@ -17,7 +17,7 @@ const Tab = props => {
   );
 };
 
-//proptype object
+// proptype object
 Tab.propTypes = {
   selectTabHandler: PropTypes.func.isRequired,
   selectedTab: PropTypes.string.isRequired,

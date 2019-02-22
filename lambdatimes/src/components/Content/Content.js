@@ -60,8 +60,8 @@ export default class Content extends Component {
         */}
         <Tabs selectedTab={this.state.selected} // pass select state to here;
         selectTabHandler={this.changeSelected}
-        tabs={this.state.tabs} /> // pass tab state to here;
-        <Cards cards={this.filterCards()} /> // pass card state to here; run thru filterCards method;
+        tabs={this.state.tabs} /> {/* pass tab state to here;*/}
+        <Cards cards={this.filterCards()} /> {/* pass card state to here; run thru filterCards method;*/}
       </div>
     );
   }
