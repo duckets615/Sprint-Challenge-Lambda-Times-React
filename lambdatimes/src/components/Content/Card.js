@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = props => {
+  // variable to cut down on typing props every 5 sec;
   const {
     headline,
     author,
     img
   } = props.card;
+
   return (
     <div className="card">
       <div className="headline">{headline}</div>

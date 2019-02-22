@@ -11,7 +11,7 @@ const Cards = props => {
 }
 
 Cards.PropTypes = {
-  cards: PropTypes.arrayOf(PropTypes.shape({
+  cards: PropTypes.arrayOf(PropTypes.shape({ //obj takes a specific shape
     author: PropTypes.string.isRequired,
     headline: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,

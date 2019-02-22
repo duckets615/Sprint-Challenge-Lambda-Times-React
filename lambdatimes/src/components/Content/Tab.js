@@ -10,13 +10,14 @@ const Tab = props => {
   return (
     <div
       className={`tab ${match} && 'active-Tab'}`}
-      onClick={() => props.selectTabHandler(props.tab)}      
+      onClick={() => props.selectTabHandler(props.tab)}
     >
       {props.tab.toUpperCase()}
     </div>
   );
 };
 
+//proptype object
 Tab.propTypes = {
   selectTabHandler: PropTypes.func.isRequired,
   selectedTab: PropTypes.string.isRequired,
