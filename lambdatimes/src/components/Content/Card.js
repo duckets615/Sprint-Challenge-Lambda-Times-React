@@ -1,19 +1,34 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = props => {
+  // variable to cut down on typing props every 5 sec;
+  const {
+    headline,
+    author,
+    img
+  } = props.card;
+// structure for how each card is to be rendered;
   return (
     <div className="card">
-      <div className="headline">{/* headline goes here */}</div>
+      <div className="headline">{headline}</div>
       <div className="author">
         <div className="img-container">
-          <img src={'' /* image source goes here */} />
+          <img src={img} />
         </div>
-        <span>By {/* author goes here */}</span>
+        <span>By {author}</span>
       </div>
     </div>
   );
 };
 
-// Make sure to include PropTypes.
+Card.PropTypes = {
+  cards: PropTypes.arrayOf(PropTypes.shape({
+    author: PropTypes.string.isRequired,
+    headline: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    tab: PropTypes.string.isRequired,
+  })).isRequired
+}
 
 export default Card;
